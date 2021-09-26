@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title charset=UTF-8></title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="formValidation.css">
+    <script type="text/javascript" src="avatar.js" defer></script>
+    <script type="text/javascript" src="formValidation.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <form action="" menthod="POST" class="form" id="form-1">
+            <h3>Create Account</h3>
+            <div class="space"></div>
+
+            <div class="form-group">
+                <label for="avatar" class="form-label"></label>
+                <div class="profile-pic-div">
+                    <img src="#" id="avatar-photo" class="avatar-photo">
+                    <input id="avatar" class="avatar" name="avatar" type="file" class="form-control">
+                    <label for="avatar" id="uploadBtn" class="uploadBtn">Choose avatar</label>
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input id="fullname" name="fullname" type="text" placeholder="Nguyen Van A" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="birth-date" class="form-label">Birth date</label>
+                <input id="birth-date" name="birth-date" type="date" placeholder="---Select---" class="form-control" value="2000-01-01">
+                <span class="form-message"></span>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="text" placeholder="nguyenvana@gmail.com" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" name="password" type="password" placeholder="******" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <lable for="password-confirmation" class="form-label">Password Confirmation</lable>
+                <input id="password-confirmation" name="password-confirmation" type="password" placeholder="******" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <lable for="gender" class="form-label">Gender</lable>
+                <div class="form-radio">
+                    <input name="gender" type="radio" class="form-control radio-control" value="Male">
+                    <label class="radio-label">Male</label>
+                </div>
+                <div class="form-radio">
+                    <input name="gender" type="radio" class="form-control radio-control" value="Female">
+                    <label class="radio-label">Female</label>
+                </div>
+                <div class="form-radio">
+                    <input name="gender" type="radio" class="form-control radio-control" value="Other">
+                    <label class="radio-label">Other</label>
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <lable for="province" class="form-label">Province</lable>
+                <select id="province" name="province" class="form-control">
+                    <option value="">---Select---</option>
+                    <option value="tphn">TP. Ha Noi</option>
+                    <option value="tpdn">TP. Da Nang</option>
+                    <option value="tphcm">TP. Ho Chi Minh</option>
+                </select>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <lable for="rule" class="form-label"></lable>
+                <div class="form-radio">
+                    <input name="rule" type="checkbox" class="form-control radio-control" value="Rule-1">
+                    <label class="rules-label">Do you agree to the terms of service?</label>
+                </div>
+                <div class="form-radio">
+                    <input name="rule" type="checkbox" class="form-control radio-control" value="Rule-2">
+                    <label class="rules-label">Do you agree to the terms of service?</label>
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <button class="button">Register</button>
+        </form>
+    </div>
+</body>
+</html>
